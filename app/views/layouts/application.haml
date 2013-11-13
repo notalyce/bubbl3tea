@@ -1,0 +1,42 @@
+!!!
+%html
+  %head
+    %title Alyce Currier @ Bubbl3tea
+    %meta{:charset => "UTF-8"}
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+
+    <script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher: "740049c3-7642-40de-be57-ae7803e5a787", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+  %body
+    .container
+      %header
+        .title
+          %h1.bubbl3tea
+            %a{:href => "/"} Bubbl3tea
+          %p
+            %strong 
+              %a{:href => "/contact"}Alyce Currier:
+            Human female. <a href="http://www.wistia.com" target="_blank">Wistia</a> Content Strategist. <a href="http://www.earmilk.com" target="_blank">Earmilk</a> Senior Editor. Cambridge, MA resident interested in sociology, media, the Internet (naturally), doodling, biking, daydreaming about Montreal, and music.
+
+          %p 
+            <a href="https://twitter.com/notalyce" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @notalyce</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>        
+        .selfie
+
+      %nav
+        %ul
+          %li
+            %a{:href => "/"} Blog
+          %li
+            %a{:href => "/writing"} Writing
+          %li
+            %a{:href => "/visual"} Visual
+          %li
+            %a{:href => "/projects"} Projects
+
+      .bodycontainer
+        = yield
+
+      %footer
+        Copyright 2013
+        %a{:href => "/contact"} Alyce Currier
