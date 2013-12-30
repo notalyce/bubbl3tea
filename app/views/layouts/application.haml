@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title Alyce Currier @ Bubbl3tea
+    %title Alyce's Stuff
     %meta{:charset => "UTF-8"}
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
@@ -13,12 +13,10 @@
       %header
         .title
           %h1.bubbl3tea
-            %a{:href => "/"} Bubbl3tea
+            %a{:href => "/"} Alyce Currier
           %p
             %strong 
-              %a{:href => "/contact"}Alyce Currier:
-            Human female. <a href="http://www.wistia.com" target="_blank">Wistia</a> Content Strategist. <a href="http://www.earmilk.com" target="_blank">Earmilk</a> Senior Editor. Cambridge, MA resident interested in sociology, media, the Internet (naturally), doodling, biking, daydreaming about Montreal, and music.
-
+              Human female. <a href="http://www.wistia.com" target="_blank">Wistia</a> Content Strategist. <a href="http://www.earmilk.com" target="_blank">Earmilk</a> Senior Editor. DJ Lychee. Cambridge, MA resident interested in sociology, media, the Internet (naturally), techno, doodling, and biking.
           %p 
             <a href="https://twitter.com/notalyce" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @notalyce</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>        
         .selfie
@@ -30,7 +28,7 @@
           %li
             %a{:href => "/writing"} Writing
           %li
-            %a{:href => "/visual"} Visual
+            %a{:link_to => 'Visual', :page_path => 'visual'} Visual
           %li
             %a{:href => "/projects"} Projects
 
