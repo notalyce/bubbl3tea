@@ -5,7 +5,7 @@ body {
   background-position: right bottom, left bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font: 17px 'Fauna One', serif;
+  font: 17px 'Roboto', sans-serif;
   color: #30332a;
   text-align: left;
   margin: 0;
@@ -32,7 +32,7 @@ a:hover, a:active {
 
 .container header {
   display: inline-block;
-  padding: 40px 40px 0px 40px;
+  padding: 30px 40px 0px 40px;
   width: 720px;
   clear: both;
   text-align: justify;
@@ -86,7 +86,6 @@ nav {
 nav ul {
   position: relative;
   list-style-type: none;
-  text-transform: uppercase;
   margin: 0 auto;
   padding: 0;
  }
@@ -128,7 +127,7 @@ nav li a:hover, nav li a:active {
 }
 
 .blogpost {
-  padding: 0 60px;
+  padding: 30px 60px;
   width: 680px;
 }
 
@@ -137,27 +136,26 @@ nav li a:hover, nav li a:active {
 }
 
 .blogpost .title {
-  font: 45px 'Viga', sans-serif;
+  font: 40px 'Viga', sans-serif;
   padding: 0;
   margin: 0;
   width: 720px;
 }
 
 .blogpost h3 {
-  font: 40px 'Viga', sans-serif;
+  font: 25px 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
 }
 
 .blogpost h4 {
-  font: 30px 'Viga', sans-serif;
+  font: 20px 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
 }
 
 .blogpost .created_at {
   font-size: 17px;
-  text-transform: uppercase;
 }
 
 .blogpost .social_sharing {
@@ -214,7 +212,6 @@ li {
 
 footer {
   text-align: center;
-  text-transform: uppercase;
   font-size: 12px;
   padding: 20px;
 }
