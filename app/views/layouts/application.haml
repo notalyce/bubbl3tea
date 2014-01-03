@@ -1,11 +1,14 @@
 !!!
 %html
   %head
-    %title Alyce's Stuff Online
+    %title
+      Alyce's Stuff Online -
+      = yield(:page_title)
     %meta{:charset => "UTF-8"}
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
+    = favicon_link_tag 'favicon.ico'
 
     <script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher: "740049c3-7642-40de-be57-ae7803e5a787", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
   %body

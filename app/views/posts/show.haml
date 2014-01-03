@@ -1,3 +1,5 @@
+= content_for :page_title, @post.title
+
 .blogpost 
   .title
     = @post.title
@@ -12,4 +14,3 @@
           displayText = 'Email')
   .post_body            
     = @post.body.html_safe
-  .post_comments
