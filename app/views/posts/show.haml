@@ -1,8 +1,8 @@
 .blogpost 
-  .created_at
-    = @post.created_at.strftime('%B %d, %Y')
   .title
     = @post.title
+  .created_at
+    = @post.created_at.strftime('%B %d, %Y')
   .social_sharing
     %span(class = 'st_twitter_hcount'
           displayText = 'Tweet')
@@ -10,8 +10,6 @@
           displayText = 'Facebook')
     %span(class = 'st_email_hcount'
           displayText = 'Email')
-  .featured_image
-    %img(src = 'http://i.imgur.com/i9wGND0.png' width = '680')
   .post_body            
     = @post.body.html_safe
   .post_comments
