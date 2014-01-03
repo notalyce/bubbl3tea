@@ -35,6 +35,9 @@ gem 'jbuilder', '~> 1.2'
 # Static Pages
 gem 'high_voltage', '~> 2.0.0'
 
+# Authentication
+gem 'clearance'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

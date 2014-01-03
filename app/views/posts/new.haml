@@ -1,3 +1,9 @@
-This is new.haml.
+.blogpost
 
-= render partial: 'form'
+  .title
+    Add a Post
+
+  - if signed_in?
+    = render partial: 'form'
+  - else
+    = link_to 'Sign in to do badass stuff', sign_in_path

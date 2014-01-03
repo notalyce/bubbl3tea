@@ -1,4 +1,10 @@
-This is edit.haml.
+.blogpost
 
-= render partial: 'form'
-= link_to "Delete post", @post, :method => :delete
+  .title
+    Edit a Post
+
+  - if signed_in?
+    = render partial: 'form'
+    = link_to "Delete post", @post, :method => :delete
+  - else
+    = link_to 'Sign in to do badass stuff', sign_in_path
