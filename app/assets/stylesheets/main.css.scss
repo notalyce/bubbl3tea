@@ -98,13 +98,17 @@ nav a {
 
 nav li {
   display: inline-block;
-  width: 126px;
-  padding: 15px;
-  margin: 0;
   font-size: 16px;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+}
+
+nav li a {
+  display: block;
+  width: 126px;
+  padding: 15px;
+  margin: 0;
 }
 
 nav li:hover, nav li:active {
