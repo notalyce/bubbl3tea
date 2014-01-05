@@ -1,15 +1,18 @@
 - if signed_in?
-
+  .created_at
+    = current_user.email
+    |
+    = link_to 'Sign out', sign_out_path, method: :delete
   = form_for @post, html: {class: "post_form"} do |f|
     .form_field
       = f.label :title, "Title"
-      = f.text_field :title
+      = f.text_field :title, size: "70"
     .form_field
       = f.label :body, "Post Content"
-      = f.text_area :body, size: "100x10"
+      = f.text_area :body, size: "70x10"
     .form_field
       = f.label :excerpt, "Excerpt"
-      = f.text_area :excerpt, size: "100x5"
+      = f.text_area :excerpt, size: "70x5"
     = f.submit
 
 - else

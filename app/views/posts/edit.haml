@@ -4,8 +4,6 @@
     Edit a Post
 
   - if signed_in?
-    = current_user.email
-    = link_to 'Sign out', sign_out_path, method: :delete
     = render partial: 'form'
     = link_to 'Destroy', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' }
   - else

@@ -44,6 +44,8 @@ GEM
       activemodel
     erubis (2.7.0)
     execjs (2.0.2)
+    friendly_id (5.0.2)
+      activerecord (~> 4.0.0)
     haml (4.0.3)
       tilt
     high_voltage (2.0.0)
@@ -126,6 +128,7 @@ PLATFORMS
 DEPENDENCIES
   clearance
   coffee-rails (~> 4.0.0)
+  friendly_id (~> 5.0.0)
   haml
   high_voltage (~> 2.0.0)
   jbuilder (~> 1.2)

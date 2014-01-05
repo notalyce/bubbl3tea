@@ -30,7 +30,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
     @post.destroy
     redirect_to posts_path
   end
@@ -46,7 +46,7 @@ class PostsController < ApplicationController
   end
   
   def get_post
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
   end
 
 end

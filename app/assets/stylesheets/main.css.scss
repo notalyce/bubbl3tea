@@ -197,6 +197,16 @@ li {
   padding-bottom: 5px;
 }
 
+input, textarea {
+  font: 17px 'Roboto', sans-serif;
+  border: 1px solid #1c2123;
+  padding: 15px;
+}
+
+.form_field {
+  margin: 20px 0;
+}
+
 footer {
   text-align: center;
   font-size: 12px;
