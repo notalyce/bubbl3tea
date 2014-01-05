@@ -14,3 +14,5 @@
           displayText = 'Email')
   .post_body            
     = @post.body.html_safe
+  %a{:class => "moot", :href => "https://moot.it/i/alyce/my/path:my-key", :title => @post.title}
+    Comments for this blog entry

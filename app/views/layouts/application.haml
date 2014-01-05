@@ -10,6 +10,12 @@
     = csrf_meta_tags
     = favicon_link_tag 'favicon.ico'
 
+    <link rel="stylesheet" type="text/css" href="//cdn.moot.it/1/moot.css">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//cdn.moot.it/1/moot.min.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
     <script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher: "740049c3-7642-40de-be57-ae7803e5a787", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
   %body
     .container
@@ -18,7 +24,7 @@
           %h1.bubbl3tea
             %a{:href => "/"} Alyce Currier
           %p 
-            Currently content strategist at <a href="http://www.wistia.com" target="_blank">Wistia</a>, senior editor at <a href="http://www.earmilk.com" target="_blank">Earmilk</a>, and DJ Lychee. Cambridge, MA resident interested in sociology (especially as it relates to media and taste), overthinking and tweaking the Internet, the human side of technology, techno, doodling, inclusive revelry, lifting, and biking.
+            Currently content strategist at <a href="http://www.wistia.com" target="_blank">Wistia</a>, senior editor at <a href="http://www.earmilk.com" target="_blank">Earmilk</a>, and <a href="/pages/lychee">DJ Lychee</a>. Cambridge, MA resident interested in sociology (especially as it relates to media and taste), overthinking and tweaking the Internet, the human side of technology, techno, doodling, inclusive revelry, lifting, and biking.
           %p 
             <a href="https://twitter.com/notalyce" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @notalyce</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>        
         .selfie
@@ -28,9 +34,11 @@
           %li
             %a{:href => "/"} Blog
           %li
-            %a{:href => "/pages/writing"} Writing
+            %a{:href => "/pages/writing"} Articles
           %li
             %a{:href => "/pages/visual"} Visual
+          %li
+            %a{:href => "/pages/lychee"} Listen
           %li
             %a{:href => "/pages/projects"} Projects
 
