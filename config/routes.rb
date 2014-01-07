@@ -3,6 +3,13 @@ Bubbl3tea::Application.routes.draw do
   resources :posts
   root :to => 'posts#index'
 
+  get "/writing", to: 'high_voltage/pages#show', id: 'writing', as: 'writing'
+  get "/visual", to: 'high_voltage/pages#show', id: 'visual', as: 'visual'
+  get "/lychee", to: 'high_voltage/pages#show', id: 'lychee', as: 'lychee'
+  get "/projects", to: 'high_voltage/pages#show', id: 'projects', as: 'projects'
+  get "/contact", to: 'high_voltage/pages#show', id: 'contact', as: 'contact'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
