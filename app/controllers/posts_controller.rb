@@ -36,7 +36,7 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts = Post.all(:order=> 'created_at desc')
+    @mini_posts = Post.order('created_at DESC').page(params[:page]).per(5)
   end
 
   private

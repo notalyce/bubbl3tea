@@ -79,7 +79,7 @@ nav {
   text-align: center;  
   background: #bfe779;
   width: 100%;
-}  
+} 
 
 nav ul {
   position: relative;
@@ -116,6 +116,28 @@ nav li:hover, nav li:active {
 nav li a:hover, nav li a:active {
  color: #fff;
  }
+
+ 
+nav.pagination {
+  margin: 30px 60px;
+  text-align: left;
+  background: #ffffff;
+  width: 100%;
+  font: 18px 'Roboto', sans-serif;
+}  
+
+nav.pagination span {
+  padding: 0 10px;
+}
+
+nav.pagination a {
+  color: #61bf99;
+  text-decoration: none;
+}  
+
+nav.pagination a:hover, a:active {
+  color: #bfe779;
+}
 
 .bodycontainer {
   font-size: 17px;
