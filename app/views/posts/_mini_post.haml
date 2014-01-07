@@ -1,9 +1,0 @@
-.mini_post
-  .title
-    = link_to mini_post.title, post_path(mini_post)
-  .created_at
-    = mini_post.created_at.strftime('%B %d, %Y')
-  .excerpt
-    = truncate(mini_post.excerpt, :length => 250, :separator => ' ')
-  .continue_reading
-    = link_to 'Continue Reading &rarr;'.html_safe, post_path(mini_post)
