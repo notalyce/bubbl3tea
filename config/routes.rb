@@ -8,6 +8,7 @@ Bubbl3tea::Application.routes.draw do
   get "/lychee", to: 'high_voltage/pages#show', id: 'lychee', as: 'lychee'
   get "/projects", to: 'high_voltage/pages#show', id: 'projects', as: 'projects'
   get "/contact", to: 'high_voltage/pages#show', id: 'contact', as: 'contact'
+  get "/reading", to: 'high_voltage/pages#show', id: 'reading', as: 'reading'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
